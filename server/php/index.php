@@ -101,7 +101,7 @@ route('get', '/api/get', function () {
 }, ['POST']);
 
 serve([
-    'host' => 'http://86.129.116.112:6969',
-    'port' => 6969,
+    'host' => $ini['HOST'],
+    'port' => $ini['PORT'],
     'header' => $prototype_header_secure
 ]);
